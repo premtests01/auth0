@@ -1,3 +1,5 @@
-// This is a placeholder for an Auth0 rule
-// Test push
-// Retest push
+// This is a test
+function (user, context, callback) {
+  console.log(JSON.stringify({ user: user, context: context }, null, 2));
+  callback(null, user, context);
+}
